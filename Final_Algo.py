@@ -34,7 +34,7 @@ def weather_prophet(train: pd.DataFrame) -> pd.DataFrame:
 def features_pred(data: pd.DataFrame, column) -> pd.DataFrame:
     train = data.copy()
     train = train.rename(columns = {"Date": "ds", column: "y"})
-    predictions = weather_prophet(train.iloc[:((int) (0.5 * len(data)))])
+    predictions = weather_prophet(train) # in this case, we train on the entire input
     predictions = predictions.rename(columns = {"yhat_upper": column, "ds": "Date"})
     return predictions[[column]]
 
