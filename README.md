@@ -8,15 +8,15 @@ Datasets were exported from Kaggle.
 
 The input dataset is a weather dataset in CSV format and should contain the following columns:
 
-• Temperature (C)
+  • Temperature (C)
 
-• Humidity
+  • Humidity
 
-• Wind Speed (km/h)
+  • Wind Speed (km/h)
 
-• Pressure (millibars)
+  • Pressure (millibars)
 
-• Date (format = yyyy-mm-dd hh:mm:00)
+  • Date (format = yyyy-mm-dd hh:mm:00)
 
 
 **Implementation Details**
@@ -31,4 +31,4 @@ The forecasted output from the Prophet model is then inputted into a seperately 
 
 • Convolutional Neural Network:
 
-The algorithm utilizes a L2-regularizated Convolutional Neural Network to predict solar power generation potential based on the combined forecasted weather features.
+The algorithm utilizes a seperately-trained L2-regularizated Convolutional Neural Network to predict solar power generation potential based on the combined forecasted weather features.
