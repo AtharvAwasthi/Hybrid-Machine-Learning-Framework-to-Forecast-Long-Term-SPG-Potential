@@ -5,6 +5,7 @@ I developed a climate-change-informed algorithm based on three learning models (
 Datasets were exported from Kaggle.
 
 **Expected Input**
+
 The input dataset is a weather dataset in CSV format and should contain the following columns:
 
 Temperature (C)
@@ -17,6 +18,7 @@ Date (format = yyyy-mm-dd hh:mm:00)
 
 
 **Implementation Details**
+
 Facebook Prophet Model:
 
 Given an input over the past _x_ years, the algorithm uses the Prophet library to perform time series forecasting (hourly freq.) for Temperature, Humidity, Wind Speed, and Pressure _x_ years into the future.
