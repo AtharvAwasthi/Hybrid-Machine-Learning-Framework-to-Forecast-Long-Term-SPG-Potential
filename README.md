@@ -33,3 +33,6 @@ The forecasted output from the Prophet model is then inputted into a seperately 
 • Convolutional Neural Network:
 
 The algorithm utilizes a seperately-trained L2-regularizated Convolutional Neural Network to predict solar power generation potential for a 10-acre solar farm based on the combined forecasted weather features.
+
+**Potential Impact**
+We selected a random sample of current US solar farms, and for each of these facilities, we randomly selected five regions in a 100-mile radius, and applied their 5-year trailing weather data to our algorithm, scaling the projected solar power generation relative to the size of . We then randomly selected five regions in a 100-mile radius, and applied our algorithm to these locations. For each US solar farm, 
